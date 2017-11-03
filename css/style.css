@@ -6,7 +6,7 @@ body {
   font-weight: 300 !important;
   background: #eee;
   color: rgba(0, 0, 0, 1);
-  margin: 0px;
+  margin: 80px 0px 0px 0px;
 }
 
 body h1, h2, h3 {
@@ -17,25 +17,92 @@ body h1, h2, h3 {
 
 #main-header {
   background-color: #fff;
-  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  top: 0px;
+}
+
+#main-header::after {
+  /* content: ""; */
+  display: block;
+  width: 10px;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.my-input {
+  display: inline-block;
+  padding: 10px;
+  height: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .2);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: box-shadow .5s;
+}
+.my-input:hover {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .4);
+
+}
+
+.my-input:focus {
+
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .4);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 #site-title {
   font-family: "Pacifico", cursive;
   font-weight: 400;
+  position: relative;
+  top: -6px;
+}
+
+#site-slogan {
+  position: relative;
+  top: -6px;
 }
 
 #top-stories {
   width: 95%;
   margin: auto;
-  margin-top: 10px;
 }
 
 a {
   text-decoration: none;
+  color: #777;
+  transition: border-bottom, color .5s;
+
+}
+
+a:hover, a.more-link.bolded-link:hover {
+  border-bottom: 2px solid #000;
+  color: #000;
+
 }
 
 p {
+  text-indent: 10px;
 }
 
 .more-link {
@@ -50,19 +117,46 @@ p {
   color: #f00;
 }
 
+.copy-text {
+  text-align: center;
+}
+
 article {
   background-color: #fff;
-  max-width: 29.6%;
+  max-width: 30.926%;
   display: inline-block;
   padding: 10px;
   margin: 5px;
+  border-radius: 2px;
+  transition: box-shadow .5s;
+}
+
+article:hover {
+  box-shadow: 0px 3px 15px 0px rgba(0,0,0,.5);
+  height: 105%;
+}
+
+article:active {
+  opacity: .5;
+}
+
+article h3 {
+
+  font-weight: 400;
 }
 
 .article-image {
   height: 200px;
   width: 100%;
+  margin-bottom: 10px;
   background-size: cover !important;
   background-position: center !important;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.my-text {
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 footer {

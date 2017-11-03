@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
+
 {% for post in site.posts %}
 <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}</a>
 {% endfor %}
 
 <header id="main-header">
+  <div class="logo" style="background:url(chocolate.jpg)"></div>
   <h1 id="site-title">Best News Ever!</h1>
-  <h3>Come and get some, mate!</h3>
+  <h3 id="site-slogan">Come and get some, mate!</h3>
+  <input placeholder="search..." class="my-input" />
 </header>
-
 <main>
   <section id="top-stories">
 
@@ -21,7 +23,7 @@ layout: default
     </article>
 
     <article>
-      <div class="article-image" style="background:url(chocolate.jpeg)"></div>
+      <div class="article-image" style="background:url(chocolate.jpg)"></div>
       <h3>Chocolate is actually good for you</h3>
       <p>This is some placeholder text that is not really used for anything
         other than to hold places. <a href="#" class="more-link">Read more ...</a></p>
@@ -34,11 +36,50 @@ layout: default
         other than to hold places. <a href="#" class="more-link bolded-link">Read more ...</a></p>
     </article>
 
+    <div class="my-text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie
+        metus sed metus commodo, sed condimentum est ultrices. Morbi ultrices velit
+        non eleifend tristique. Duis tincidunt vitae nisl ac mollis. Duis velit
+        urna, fermentum non vestibulum et, gravida quis ante. Maecenas consectetur
+        euismod maximus. Sed ornare ipsum ac erat eleifend, a commodo quam
+        tincidunt. Curabitur non nisi congue, faucibus quam eu, vehicula purus.
+        Nulla sodales, sapien nec tempor bibendum, purus odio viverra orci, at
+        volutpat dolor augue sed mauris.
+      </p>
+      <p>
+        Nulla non nulla ligula. Fusce elementum sed enim varius venenatis. Fusce
+        accumsan convallis nulla, eget semper dui dictum at. Proin finibus, magna
+        eu malesuada laoreet, diam eros aliquam magna, non dignissim leo felis eget
+        massa. Duis id massa eget ligula imperdiet placerat. Mauris egestas purus
+        tristique rutrum interdum. Phasellus pharetra placerat orci, sit amet
+        pellentesque nunc malesuada nec. Praesent eget gravida metus, et blandit
+        nulla. Nulla non metus eu ligula consequat rhoncus. Vestibulum sodales
+        volutpat diam vitae vehicula. Phasellus id augue suscipit, tempor lorem vel,
+        consequat elit.
+      </p>
+      <p>
+        Nunc egestas augue nec metus feugiat, in aliquet tellus congue. Sed pellentesque id massa at eleifend. Etiam ornare, mauris dignissim elementum lacinia, velit sapien porttitor metus, non pharetra justo ligula at lorem. Vivamus faucibus nisi id sem efficitur vulputate. Proin id tellus ultricies, fringilla risus in, aliquet quam. Aenean convallis sodales ipsum, id laoreet erat interdum et. Suspendisse interdum risus ut ullamcorper luctus. Nulla facilisi. Aenean at erat nec nisi suscipit rutrum. Aliquam non nibh pretium dolor luctus efficitur. Proin bibendum, urna id aliquet pulvinar, sem orci consectetur odio, id egestas lacus nulla non augue. Donec fermentum tortor eget mauris gravida, ac interdum orci dapibus. Ut mauris ex, porttitor a luctus tincidunt, elementum nec quam. Morbi vel quam quam.
+      </p>
+      <p>
+        Morbi posuere, ante tempor porta iaculis, nibh urna semper urna, sit amet suscipit purus odio et augue. Vestibulum a ligula ac tortor laoreet fermentum. Phasellus auctor luctus tempus. Nullam sed turpis lorem. Sed porttitor nisi sit amet ullamcorper commodo. Maecenas pellentesque nunc nulla, vel pulvinar metus accumsan vitae. Integer consequat dui in leo luctus, non luctus ante auctor. Vivamus a blandit nisi. Proin aliquam sem tempor libero ultrices finibus.
+      </p>
+      <p>
+        Etiam id felis justo. In mauris tellus, ultrices a convallis sit amet, elementum non nibh. Ut ultrices suscipit volutpat. Integer arcu leo, consectetur mollis sagittis at, faucibus et eros. Nam viverra leo sed elit aliquet bibendum. Morbi sollicitudin tempus odio, at vehicula elit gravida vel. Vestibulum placerat metus metus, non egestas eros luctus in. Suspendisse vehicula sed velit scelerisque vestibulum. In sed elit sem. Praesent eu neque eu nisi convallis finibus. Ut vestibulum blandit neque vitae condimentum. Quisque a lacus purus.
+      </p>
+    </div>
+
   </section>
+
 </main>
 
 <footer>
-  <center>
+  <div class="copy-text">
     &copy; Best News Ever! 2017
-  </center>
+  </div>
 </footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
